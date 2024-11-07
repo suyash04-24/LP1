@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="lp1" company="" webLink="http://" view-date="2024-06-01" view-index="0" gantt-divider-location="330" resource-divider-location="300" version="3.3.3312" locale="en_IN">
+    <description/>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Name" width="179" order="0"/>
+        <field id="tpd4" name="Begin date" width="67" order="1"/>
+        <field id="tpd5" name="End date" width="68" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="length"/>
+        <option id="taskLabelLeft" value="taskDates"/>
+        <option id="taskLabelRight" value="advancement"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[3,5,7,4,0,1,2]]></timeline>
+        <option id="color.recent"><![CDATA[#330033 #9999ff #99ff99 #ffff33 #33ffcc #6666ff #ff6666]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="206" order="0"/>
+        <field id="1" name="Default role" width="90" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="8" uid="1fa65b96db3246c986057e9aaf40759f" name="Phase-1" color="#330033" meeting="false" start="2024-08-15" duration="27" complete="100" expand="true">
+            <task id="0" uid="6d6a0dbfbd5e4b578362b758001b47cf" name="initiation" meeting="false" start="2024-08-15" duration="11" complete="100" expand="true">
+                <depend id="1" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="1" uid="718c8eab7969483dbdfde9ef8185e4e6" name="Planning" color="#ff6666" meeting="false" start="2024-08-30" duration="16" complete="100" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="9" uid="5fd1b24f8b39453991615281b7565489" name="Phase-2" color="#330033" meeting="false" start="2024-09-23" duration="19" complete="100" expand="true">
+            <task id="4" uid="1a59299d4d994232b82f4dd4146ca286" name="Designing" color="#33ffcc" meeting="false" start="2024-09-23" duration="19" complete="100" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="10" uid="0c6e7e1b5ab745eb9d534cf87a2add9a" name="Phase-3" color="#330033" meeting="false" start="2024-10-18" duration="67" complete="100" expand="true">
+            <task id="2" uid="62de6a06cad04907aed5f376c3ea2af2" name="Development" color="#6666ff" meeting="false" start="2024-10-18" duration="47" complete="100" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" uid="4a8a74d6eb674d9da4a0f56f8ebcc05c" name="Testing" meeting="false" start="2024-12-24" duration="20" complete="100" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="11" uid="17f19848b47241488f0b48d4261d80cd" name="Phase-4" color="#330033" meeting="false" start="2025-01-21" duration="58" complete="64" expand="true">
+            <task id="5" uid="358ae71a9d3d44dfab0aedbdc599a454" name="Deployment" color="#ffff33" meeting="false" start="2025-01-21" duration="19" complete="95" expand="true">
+                <depend id="6" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" uid="a3a6f22dcae34c9093ede3dbf4e16be0" name="Maintainance" color="#99ff99" meeting="false" start="2025-01-21" duration="47" complete="68" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="f2d7bd7c11fd4b9f83a5a3e5546e0404" name="Closure" meeting="false" start="2025-03-27" duration="11" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="5" name="prashant" function="Default:1" contacts="pb@gmai.com" phone="741683456">
+            <rate name="standard" value="23000"/>
+        </resource>
+        <resource id="6" name="nakul" function="Default:0" contacts="nak@gmail.com" phone="641683416">
+            <rate name="standard" value="6520"/>
+        </resource>
+        <resource id="7" name="niraj" function="Default:0" contacts="abc@gmail.com" phone="561531665">
+            <rate name="standard" value="7020"/>
+        </resource>
+        <resource id="8" name="sarthak" function="Default:0" contacts="sarthan@gmail.com" phone="899418684">
+            <rate name="standard" value="20300"/>
+        </resource>
+        <resource id="9" name="shrikant" function="Default:0" contacts="shri@gmail.com" phone="688483541">
+            <rate name="standard" value="10000"/>
+        </resource>
+        <resource id="10" name="mayuresh" function="Default:0" contacts="may@gmail.com" phone="656346486">
+            <rate name="standard" value="15000"/>
+        </resource>
+        <resource id="11" name="rohit" function="Default:0" contacts="rohiht@gmai.com" phone="68463846">
+            <rate name="standard" value="16000"/>
+        </resource>
+        <resource id="12" name="litesh" function="Default:0" contacts="lit@gmail.com" phone="564315335">
+            <rate name="standard" value="14000"/>
+        </resource>
+        <resource id="13" name="akash" function="Default:0" contacts="aksah@gmail.com" phone="68416531">
+            <rate name="standard" value="18000"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="5" function="Default:1" responsible="false" load="60.0"/>
+        <allocation task-id="0" resource-id="5" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="4" resource-id="6" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="1" resource-id="6" function="Default:0" responsible="true" load="40.0"/>
+        <allocation task-id="2" resource-id="7" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="6" resource-id="7" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="8" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="6" resource-id="8" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="3" resource-id="9" function="Default:0" responsible="false" load="80.0"/>
+        <allocation task-id="5" resource-id="10" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="5" resource-id="11" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="7" resource-id="12" function="Default:0" responsible="false" load="60.0"/>
+        <allocation task-id="7" resource-id="13" function="Default:0" responsible="false" load="40.0"/>
+    </allocations>
+    <vacations/>
+    <previous>
+        <previous-tasks name="baselines_b1">
+            <previous-task id="0" start="2024-08-15" duration="13" meeting="false" super="false"/>
+            <previous-task id="1" start="2024-09-03" duration="16" meeting="false" super="false"/>
+            <previous-task id="4" start="2024-09-25" duration="18" meeting="false" super="false"/>
+            <previous-task id="2" start="2024-10-21" duration="45" meeting="false" super="false"/>
+            <previous-task id="3" start="2024-12-23" duration="20" meeting="false" super="false"/>
+            <previous-task id="5" start="2025-01-20" duration="14" meeting="false" super="false"/>
+            <previous-task id="6" start="2025-01-20" duration="41" meeting="false" super="false"/>
+            <previous-task id="7" start="2025-02-25" duration="15" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name=""/>
+    </roles>
+</project>
